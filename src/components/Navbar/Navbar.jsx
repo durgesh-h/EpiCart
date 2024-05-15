@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from '../../Images/epic.png'
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./navbar.css";
 import { Link } from "react-router-dom";
@@ -30,8 +31,9 @@ const NavBar = () => {
     >
       <Container className="navbar-container">
         <Navbar.Brand to="/">
-          <ion-icon name="bag"></ion-icon>
-          <h1 className="logo">Multimart</h1>
+          
+          <div className="logo"><img src={logo} width="150"/></div>
+          
         </Navbar.Brand>
         {/* Media cart and toggle */}
         <div className="d-flex">
